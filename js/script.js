@@ -1,16 +1,16 @@
 class BookCollection {
-//   constructor() {
-//     this.books = [];
-//     this.getBooksFromStorage();
-//     this.displayBooks();
-//   }
+  constructor() {
+    this.books = [];
+    this.getBooksFromStorage();
+    this.displayBooks();
+  }
 
-//   getBooksFromStorage() {
-//     const storedBooks = localStorage.getItem('books');
-//     if (storedBooks) {
-//       this.books = JSON.parse(storedBooks);
-//     }
-//   }
+  getBooksFromStorage() {
+    const storedBooks = localStorage.getItem('books');
+    if (storedBooks) {
+      this.books = JSON.parse(storedBooks);
+    }
+  }
 
   saveBooksToStorage() {
     localStorage.setItem('books', JSON.stringify(this.books));
@@ -26,13 +26,13 @@ class BookCollection {
     this.saveBooksToStorage();
   }
 
-//   removeBookFromCollection(id) {
-//     const index = this.books.findIndex((book) => book.id === id);
-//     if (index !== -1) {
-//       this.books.splice(index, 1);
-//       this.saveBooksToStorage();
-//     }
-//   }
+  removeBookFromCollection(id) {
+    const index = this.books.findIndex((book) => book.id === id);
+    if (index !== -1) {
+      this.books.splice(index, 1);
+      this.saveBooksToStorage();
+    }
+  }
 
   displayBooks() {
     const bookList = document.getElementById('bookList');
