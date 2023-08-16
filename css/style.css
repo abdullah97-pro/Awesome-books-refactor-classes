@@ -2,7 +2,7 @@ h1 {
   text-align: center;
 }
 
-/* div,
+div,
 table {
   width: 90%;
   height: auto;
@@ -14,7 +14,7 @@ table {
 table {
   border: 1px solid black;
   border-collapse: collapse;
-} */
+}
 
 #bookList {
   margin-bottom: 100px;
