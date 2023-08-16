@@ -17,7 +17,7 @@ table {
 }
 
 #bookList {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 #bookList tr {
@@ -30,8 +30,7 @@ table {
   background-color: turquoise;
 }
 
-td,
-label {
+td {
   font-weight: 600;
   font-size: 20px;
   margin: 0 20px;
@@ -82,4 +81,6 @@ h1::after {
   border-radius: 5px;
   font-size: 18px;
   font-weight: 700;
+  float: right;
+  margin-right: 110px;
 }
